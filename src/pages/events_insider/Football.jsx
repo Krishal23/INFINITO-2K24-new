@@ -1,5 +1,7 @@
 import React from 'react';
 import EventTemplate from './EventTemplate';
+import rulebook from './eventsRuleBook/FootballRulebook.pdf'
+
 
 const Football = () => {
   return (
@@ -9,11 +11,9 @@ const Football = () => {
       date="20/2/2024 - 22/2/2024"
       description="Join us for an exhilarating football championship where teams will compete for the ultimate prize."
       isRegistrationOpen={false}
-      rulebookUrl="https://example.com/football-rulebook"
+      rulebookUrl={rulebook}
       structure={[
-        "Each match consists of two halves of 45 minutes each.",
-        "Teams will be divided into groups and the top teams will advance to the knockout stage.",
-        "The knockout stage will be single elimination."
+        "Ritesh: 8708151519","Akhilesh Ingole : 9404549742 "
       ]}
       rules={[
         "Teams must have eleven players including a goalkeeper.",

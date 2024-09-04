@@ -149,7 +149,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  background-image: linear-gradient(45deg, #ff9933, #ff3333, #9933ff, #33cc33);
+  background-image: linear-gradient(45deg, #ff9933, #ff3333, #975d22, #ea471f);
   background-size: 200% 200%;
   animation: gradient-rotation 5s infinite linear;
   transition: all 0.3s ease;
@@ -158,7 +158,7 @@
 
 .workButton:before {
   content: "";
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg,#bf660e, #f14005, #d67413b5, #a94608,#c63a13);
   position: absolute;
   top: -2px;
   left: -2px;

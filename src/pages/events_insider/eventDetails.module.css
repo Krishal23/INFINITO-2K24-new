@@ -94,14 +94,31 @@
   
   .secondaryContent {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .structure, .rules, .judgingCriteria, .prizes {
     margin-top: 20px;
     padding: 15px;
-    background: #1e1e1e60; /* Dark background for sections */
+    width: max-content;
+    background: #201b1b6c;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(95, 28, 28, 0.121);
+  }
+  .poc{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: xx-large;
+    font-weight: bold;
+
   }
   
   .structure h3, .rules h3, .judgingCriteria h3, .prizes h3 {

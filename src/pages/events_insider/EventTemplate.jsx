@@ -17,7 +17,7 @@ const EventTemplate = ({
     <div className={styles.eventDetails}>
       <h1 className={styles.title}>{title}</h1>
       {/* <p className={styles.date}>Date: {date}</p> */}
-      <p className={styles.description}>{description}</p>
+      {/* <p className={styles.description}>{description}</p> */}
       <div className={styles.buttons}>
         {isRegistrationOpen ? (
           <Link to="/" className={`${styles.register} ${styles.open}`}>Register Now</Link>
@@ -28,16 +28,17 @@ const EventTemplate = ({
           <a href={rulebookUrl} className={styles.rulebook} target="_blank" rel="noopener noreferrer">View Rulebook</a>
         )}
       </div>
-      {/* <div className={styles.secondaryContent}>
+      <div className={styles.secondaryContent}>
         {structure && (
           <div className={styles.structure}>
-            <h3>STRUCTURE</h3>
+            <h3>Point of Contacts: </h3>
+            <div className={styles.poc}>
             {structure.map((point, index) => (
               <p key={index} className={styles.description}>{point}</p>
             ))}
-          </div>
+          </div></div>
         )}
-        {rules && (
+        {/* {rules && (
           <div className={styles.rules}>
             <h3>RULES</h3>
             {rules.map((rule, index) => (
@@ -58,8 +59,8 @@ const EventTemplate = ({
               <p key={index} className={styles.description}>{prize}</p>
             ))}
           </div>
-        )}
-      </div> */}
+        )} */}
+      </div>
     </div>
   );
 };
