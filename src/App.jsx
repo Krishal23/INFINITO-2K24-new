@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <Events />,
   },
   {
-    path: "/event/in",
+    path: "/eve",
     element: <EventsInside />,
   },
   {
