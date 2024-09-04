@@ -16,19 +16,19 @@ const EventTemplate = ({
   return (
     <div className={styles.eventDetails}>
       <h1 className={styles.title}>{title}</h1>
-      <p className={styles.date}>Date: {date}</p>
+      {/* <p className={styles.date}>Date: {date}</p> */}
       <p className={styles.description}>{description}</p>
       <div className={styles.buttons}>
         {isRegistrationOpen ? (
           <Link to="/" className={`${styles.register} ${styles.open}`}>Register Now</Link>
         ) : (
-          <a className={`${styles.register} ${styles.closed}`}>Registrations Closed</a>
+          <a className={`${styles.register} ${styles.closed}`}>Registrations Opening Soon</a>
         )}
         {rulebookUrl && (
           <a href={rulebookUrl} className={styles.rulebook} target="_blank" rel="noopener noreferrer">View Rulebook</a>
         )}
       </div>
-      <div className={styles.secondaryContent}>
+      {/* <div className={styles.secondaryContent}>
         {structure && (
           <div className={styles.structure}>
             <h3>STRUCTURE</h3>
@@ -59,7 +59,7 @@ const EventTemplate = ({
             ))}
           </div>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

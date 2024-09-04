@@ -1,14 +1,14 @@
 import React from 'react';
 import EventTemplate from './EventTemplate';
 
-const Football = () => {
+const Atheletic = () => {
   return (
     <EventTemplate
-      name="football"
-      title="Football Championship"
+      name="atheletic"
+      title="Atheletic Championship"
       date="20/2/2024 - 22/2/2024"
-      description="Join us for an exhilarating football championship where teams will compete for the ultimate prize."
-      isRegistrationOpen={false}
+      description="Join us for an exhilarating Atheletic championship where teams will compete for the ultimate prize."
+      isRegistrationOpen={true}
       rulebookUrl="https://example.com/football-rulebook"
       structure={[
         "Each match consists of two halves of 45 minutes each.",
@@ -30,4 +30,4 @@ const Football = () => {
   );
 };
 
-export default Football;
+export default Atheletic;

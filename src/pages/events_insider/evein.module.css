@@ -11,23 +11,45 @@
     /* background-image: url(bg3.jpg); */
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    padding: 20px;
-    /* background: linear-gradient(135deg, #1e1e1e, #2c2c2c);  */
+    padding: 40px;
+    background: linear-gradient(15deg,#481f1f, #2a2525, #342626,#481f1f); 
     min-height: 100vh;
+    justify-content: center;
+    align-items: center;
     color: #fff;
-    background-image: url(../bg2.png);
+    /* background-image: url(./bg2.png); */
   }
 
   .sportName{
     text-align: center;
   }
 
-  .title{
-    text-align: center;
-    font-family: 'Atmospheric', sans-serif;
-    padding: 18px;
-    font-size: xxx-large;
-  }
+/* Add this to your CSS file */
+.title {
+  position: relative; /* Required for the absolute positioning of ::after */
+  display: inline-block; /* Ensure the ::after element only affects the heading */
+  font-family: 'Atmospheric', sans-serif;
+  padding: 18px;
+  font-size: xxx-large;
+  width: fit-content;
+  text-align: center;
+  transition: color 0.3s; /* Optional: smooth color transition */
+}
+
+.title::after {
+  content: ''; /* Required to create a pseudo-element */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px; /* Line height */
+  background:linear-gradient(135deg, #ff6b6b, #ffcc33); /* Line color */
+  transition: width 0.3s ease; /* Smooth width transition */
+}
+
+.title:hover::after {
+  width: 100%; /* Line stretches to full width on hover */
+}
   
   .sportsIcons {
     display: flex;
@@ -39,7 +61,7 @@
   
   .sportIcon {
     cursor: pointer;
-    width: 160px; /* Default width */
+    width: 240px; /* Default width */
     height: 160px;
     text-align: center;
     background: linear-gradient(135deg, #ff6b6b, #ffcc33); /* Neon gradient */
@@ -203,7 +225,7 @@
         font-size: 3rem;
     }
     .sportIcon {
-      width: 100px; /* Adjust width for tablets and smaller desktops */
+      width: 220px; /* Adjust width for tablets and smaller desktops */
     }
   
     .descriptionBox h2 {

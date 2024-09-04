@@ -175,10 +175,14 @@
   
     .register {
       font-size: 14px;
+      margin: 4px 22px;
     }
   
     .rulebook {
       font-size: 14px;
+      margin: 4px 22px;
+
+
     }
   
     .structure h3, .rules h3, .judgingCriteria h3, .prizes h3 {

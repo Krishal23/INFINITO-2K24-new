@@ -33,8 +33,10 @@
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif,;
+  background: linear-gradient(15deg,#481f1f, #2a2525, #342626,#481f1f); 
+
   /* background-color: rgba(14, 13, 13, 0.7); */
-  background-image: url(../bg2.png);
+  /* background-image: url(../bg2.png); */
 
 }
 
