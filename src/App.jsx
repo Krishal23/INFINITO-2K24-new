@@ -1,9 +1,10 @@
 import AboutUs from "./pages/AboutUs/AboutUs";
-import Events from "./pages/HomePage/event/Events";
-import EventsInside from "./pages/HomePage/event/Events_inside";
+import Events from "./pages/Events/events";
+import EventsInside from "./pages/events_insider/evein";
 import Home from "./pages/HomePage/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Sponser from "./pages/Sponser/Sponser";
+
 
 const router = createBrowserRouter([
   {
