@@ -103,7 +103,7 @@ const Eve = () => {
         ))}
       </div>
       <div id="scroll-anchor" className={styles.scrollAnchor}></div>
-      <Link className={styles.workButton} to="/eve">
+      <Link className={styles.workButton} to="/events">
         SEE ALL EVENTS
       </Link>
     </div>
